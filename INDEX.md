@@ -1,2 +1,2 @@
-<p align="center"><b>Xenia art</b></p>
+<p align="center"><b class="trans-text-vertical">Xenia art</b></p>
 <hr/>
