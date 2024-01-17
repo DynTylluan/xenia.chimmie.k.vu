@@ -113,7 +113,25 @@ code, code * {
 	align-items: center;
 }
 
-.description img {
+.descimg {
         display: inline-block;
-        vertical-align: top;
+	vertical-align: center;
+	width: 45%;
+}
+
+.descimg img {
+	float: right;
+	padding-top: 20px;
+}
+
+.description {
+	align-items: center;
+	justify-content: center;
+}
+
+.desc {
+	display: inline-block;
+	max-width: 50%;
+	overflow-y: auto;
+	float: right;
 }

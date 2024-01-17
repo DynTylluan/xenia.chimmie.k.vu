@@ -48,7 +48,8 @@ echo 'Configuring "'"${TARGET}.png.c.html"'"...'
 sh "$SCRIPT_PATH/scripts/set.sh" "$OUT_PATH/${TARGET}.png.c.conf" "$OUT_PATH/${TARGET}.png.c.html"
 
 if [ -f "$SRC_PATH/../desc/${TARGET}.md" ]; then
-	sed -i "s/%DESCRIPTION%/$(markdown "$SRC_PATH/../desc/${TARGET}.md")/g" "$OUT_PATH/${TARGET}.png.c.html"
+	sed -i -e '/%DESCRIPTION%/e markdown '"$SRC_PATH/../desc/${TARGET}.md" "$OUT_PATH/${TARGET}.png.c.html"
+	sed -i 's/%DESCRIPTION%//g' "$OUT_PATH/${TARGET}.png.c.html"
 else
 	sed -i 's/%DESCRIPTION%/No description provided./g' "$OUT_PATH/${TARGET}.png.c.html"
 fi
