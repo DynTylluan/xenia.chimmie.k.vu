@@ -12,3 +12,4 @@ sh res/scripts/set.sh res/parser.conf README.md
 apk add --no-cache sed
 
 sed -i 's/index.html//g' .gitignore
+sed -i 's/*.minimal.png//g' .gitignore
