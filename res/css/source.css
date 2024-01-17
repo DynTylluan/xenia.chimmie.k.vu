@@ -1,0 +1,10 @@
+.source {
+	background-color: #00000099;
+	position: fixed;
+	float: top;
+	margin-left: 5%;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
