@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://xenia.chimmie.k.vu">
-        <img src="art/bin/xenia_drawing0_nobg.png" width="200" alt=":splash:"/>
+        <img src="art/bin/xenia_drawing0.png" width="200" alt=":splash:"/>
     </a>
 </p>
 
