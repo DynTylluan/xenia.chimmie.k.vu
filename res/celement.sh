@@ -27,6 +27,10 @@ if [ -f "$SRC_PATH/../svg/${TARGET}.svg" ]; then
 	echo '<a href="'"${SRC_PATH/$ERASE_PATH/}/../svg/${TARGET}.svg"'"><img src="res/img/svg.svg" alt=":svg_download:" width="35" height="35"/></a>' >> "$OUT_PATH/${TARGET}.png.c.html"
 fi
 
+if [ -f "$SRC_PATH/../gimp/${TARGET}.xcf" ]; then
+	echo '<a href="'"${SRC_PATH/$ERASE_PATH/}/../gimp/${TARGET}.xcf"'"><img src="res/img/gimp.svg" alt=":xcf_download:" width="35" height="35"/></a>' >> "$OUT_PATH/${TARGET}.png.c.html"
+fi
+
 if [ -f "$SRC_PATH/../license/${TARGET}.txt" ]; then
 	echo '<a href="'"${SRC_PATH/$ERASE_PATH/}/../license/${TARGET}.txt"'"><img src="res/img/license.svg" alt=":license:" width="35" height="35"/></a>' >> "$OUT_PATH/${TARGET}.png.c.html"
 fi
