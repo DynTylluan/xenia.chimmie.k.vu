@@ -35,7 +35,6 @@ if [ -f "$SRC_PATH/../desc/${TARGET}.conf" ]; then
 	done
 fi
 
-echo ' ' >> "$OUT_PATH/${TARGET}.c.conf"
 echo '</div>' >> "$OUT_PATH/${TARGET}.c.html"
 
 echo 'Configuring "'"${TARGET}.c.html"'"...'
