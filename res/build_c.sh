@@ -11,7 +11,7 @@ rm -f "$OUT_FILE"
 
 echo '<div class="files">' > "$OUT_FILE"
 
-for file_path in $(find "$DATA_PATH/bin/*" -maxdepth 0 -type f); do
+for file_path in $(find "$DATA_PATH/bin" -maxdepth 1 -type f); do
 	echo 'Parsing ART file "'"$(basename "$file_path")"'"...'
 	export OUT_PATH="$TMP_PATH"
 	export SRC_PATH="$DATA_PATH/bin"
