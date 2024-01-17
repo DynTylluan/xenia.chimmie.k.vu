@@ -1,12 +1,12 @@
 #!/bin/sh
 
 SCRIPT_PATH="$(dirname "$(realpath "$0")")"
-TARGET="${TARGET:-xenia_drawing0}"
+TARGET="${TARGET:-xenia_drawing0.png}"
 ERASE_PATH="${ERASE_PATH:-$SCRIPT_PATH}"
 SRC_PATH="${SRC_PATH:-$SCRIPT_PATH/../art/bin}"
 OUT_PATH="${OUT_PATH:-/tmp}"
 
-if ! [ -f "$SRC_PATH/${TARGET}.png" ]; then
+if ! [ -f "$SRC_PATH/${TARGET}" ]; then
 	echo 'File not found!'
 	exit 1
 fi
@@ -18,7 +18,7 @@ rm -f "$OUT_PATH/${TARGET}.c.conf"
 
 echo '<div class="filedoc" id="%FILENAME%">' > "$OUT_PATH/${TARGET}.c.html"
 cat "$SCRIPT_PATH/element.html" >> "$OUT_PATH/${TARGET}.c.html"
-echo '%FILESRC%='"${SRC_PATH/$ERASE_PATH/}/${TARGET}.png" > "$OUT_PATH/${TARGET}.c.conf"
+echo '%FILESRC%='"${SRC_PATH/$ERASE_PATH/}/${TARGET}" > "$OUT_PATH/${TARGET}.c.conf"
 echo '%FILENAME%='"${TARGET}" >> "$OUT_PATH/${TARGET}.c.conf"
 
 if [ -f "$SRC_PATH/../svg/${TARGET}.svg" ]; then
