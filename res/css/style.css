@@ -112,3 +112,8 @@ code, code * {
 	justify-content: center;
 	align-items: center;
 }
+
+.description img {
+        display: inline-block;
+        vertical-align: top;
+}
