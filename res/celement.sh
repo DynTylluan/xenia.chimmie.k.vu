@@ -35,8 +35,8 @@ if [ -f "$SRC_PATH/../license/${TARGET}.txt" ]; then
 	echo '<a href="'"${SRC_PATH/$ERASE_PATH/}/../license/${TARGET}.txt"'"><img src="res/img/license.svg" alt=":license:" width="35" height="35"/></a>' >> "$OUT_PATH/${TARGET}.png.c.html"
 fi
 
-if [ -f "$SRC_PATH/../desc/${TARGET}.conf" ]; then
-	for conf_line in $(cat "$SRC_PATH/../desc/${TARGET}.conf"); do
+if [ -f "$SRC_PATH/../links/${TARGET}.conf" ]; then
+	for conf_line in $(cat "$SRC_PATH/../links/${TARGET}.conf"); do
 		echo '<a href="'"$(echo "$conf_line" | cut -d '|' -f 2)"'"><img src="res/img/'"$(echo "$conf_line" | cut -d '|' -f 1)"'.svg" alt=":'"$(echo "$conf_line" | cut -d '|' -f 1)"':" width="35" height="35"/></a>' >> "$OUT_PATH/${TARGET}.png.c.html"
 	done
 fi
@@ -46,3 +46,9 @@ echo '</div></div><hr/>' >> "$OUT_PATH/${TARGET}.png.c.html"
 echo 'Configuring "'"${TARGET}.png.c.html"'"...'
 
 sh "$SCRIPT_PATH/scripts/set.sh" "$OUT_PATH/${TARGET}.png.c.conf" "$OUT_PATH/${TARGET}.png.c.html"
+
+if [ -f "$SRC_PATH/../desc/${TARGET}.txt" ]; then
+	sed -i "s/%DESCRIPTION%/$(cat "$SRC_PATH/../desc/${TARGET}.txt")/g" "$OUT_PATH/${TARGET}.png.c.html"
+else
+	sed -i 's/%DESCRIPTION%/No description provided./g' "$OUT_PATH/${TARGET}.png.c.html"
+fi
