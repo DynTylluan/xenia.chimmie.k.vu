@@ -6,6 +6,11 @@
 
 <h2 align="center"><b>🦊🏳️‍⚧️ Xenia Art by Chimmie Firefly</b></h2>
 
+<p align="center" class="no-highlight">
+  <a href="https://liberapay.com/chimmie/donate"><img alt=":donate:" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+  <a href="https://ci.codeberg.org/repos/12992"><img alt=":build:" src="https://ci.codeberg.org/api/badges/12992/status.svg"></a>
+</p>
+
 ### About
 
 Welcome, here's a public repository of Xenia art made by Chimmie Firefly.
