@@ -9,7 +9,7 @@ echo '<html lang="en-US">' >> index.html
 cat res/head.html >> index.html
 
 echo '<body>' >> index.html
-echo '<div>' >> index.html
+echo '<div class="maindiv">' >> index.html
 echo '<div>' >> index.html
 markdown INDEX.md >> index.html
 export TMP_PATH="/tmp"
