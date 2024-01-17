@@ -1,7 +1,7 @@
 #!/bin/sh
 
 SCRIPT_PATH="$(dirname "$(realpath "$0")")"
-TARGET="${1:-xenia_drawing0}"
+TARGET="${TARGET:-xenia_drawing0}"
 ERASE_PATH="${ERASE_PATH:-$SCRIPT_PATH}"
 SRC_PATH="${SRC_PATH:-$SCRIPT_PATH/../art/bin}"
 OUT_PATH="${OUT_PATH:-/tmp}"
