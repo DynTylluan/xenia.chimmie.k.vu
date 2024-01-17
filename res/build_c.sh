@@ -9,6 +9,9 @@ cd "$SCRIPT_PATH"
 
 rm -f "$OUT_FILE"
 
+# Install ImageMagick
+apk add --no-cache imagemagick
+
 echo '<div class="files">' > "$OUT_FILE"
 
 for file_path in $(find "$DATA_PATH/bin" -maxdepth 1 -type f); do

@@ -20,7 +20,11 @@ rm -f "$OUT_PATH/${TARGET}.png.c.conf"
 
 echo '<div class="filedoc" id="%FILENAME%">' > "$OUT_PATH/${TARGET}.png.c.html"
 cat "$SCRIPT_PATH/element.html" >> "$OUT_PATH/${TARGET}.png.c.html"
-echo '%FILESRC%='"${SRC_PATH/$ERASE_PATH/}/${TARGET}.png" > "$OUT_PATH/${TARGET}.png.c.conf"
+
+# Fix size for faster page rendering
+convert "${SRC_PATH}/${TARGET}.png" -resize 420 "${SRC_PATH}/${TARGET}.minimal.png"
+
+echo '%FILESRC%='"${SRC_PATH/$ERASE_PATH/}/${TARGET}.minimal.png" > "$OUT_PATH/${TARGET}.png.c.conf"
 echo '%FILENAME%='"${TARGET}" >> "$OUT_PATH/${TARGET}.png.c.conf"
 
 if [ -f "$SRC_PATH/../svg/${TARGET}.svg" ]; then
