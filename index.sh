@@ -10,6 +10,7 @@ cat res/head.html >> index.html
 
 echo '<body>' >> index.html
 cat res/source.html >> index.html
+echo '<a hidden="true" rel="me" href="https://catcatnya.com/@gameplayervent">Mastodon</a>' >> index.html
 echo '<div class="maindiv">' >> index.html
 echo '<div>' >> index.html
 markdown INDEX.md >> index.html
