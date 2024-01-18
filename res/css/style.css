@@ -1,8 +1,8 @@
 :root {
 	--body-coloring: linear-gradient(45deg, #cda2e8, #845491, #9468a1);
-	--div-background-coloring: linear-gradient(70deg, #A677B9, #6f3abd);
+	--div-background-coloring: radial-gradient(circle, #a971d6, #d965ad);
 	--text-coloring: linear-gradient(45deg, rgb(255, 234, 253), rgb(235, 251, 255));
-	--text-shadowing: rgba(255, 211, 107, 0.123);
+	--text-shadowing: #46253969;
 	--hr-coloring: linear-gradient(90deg, #00000000 30%, #fff 50%, #00000000 70%);
 	--code-coloring: linear-gradient(45deg, rgb(211, 255, 196), rgb(147, 255, 129));
 	--code-shadowing: #ffffff00;
@@ -36,7 +36,7 @@ body {
 	height: auto;
 }
 
-body div div, h1, b, h2, h3, hr, p, ul, code, a {
+.main, h1, b, h2, h3, h4, hr, p, ul, code, a {
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -44,7 +44,7 @@ body div div, h1, b, h2, h3, hr, p, ul, code, a {
 	background-image: var(--text-coloring);
 	background-size: 100%;
 	background-clip: text;
-	text-shadow: 2px 2px 4px var(--text-shadowing);
+	text-shadow: 2px 2px 6px var(--text-shadowing);
 }
 
 .maindiv {
@@ -63,7 +63,7 @@ body div div, h1, b, h2, h3, hr, p, ul, code, a {
 	box-shadow: 0px 0px 25px #FCDEFD;
 }
 
-body div div {
+.main {
 	margin: 0 auto;
 	margin-bottom: 10px;
 	box-shadow: 0px 0px;
@@ -115,23 +115,34 @@ code, code * {
 
 .descimg {
         display: inline-block;
-	vertical-align: center;
-	width: 50%;
+	text-align: right;
+	width: 48%;
+	margin-right: 2%;
 }
 
 .descimg img {
-	float: right;
-	padding-top: 20px;
+	padding: 0px;
+	height: 100%;
+	max-width: 40%;
+	border-radius: 10px;
+	border: 1px solid #ffffff69;
+	background-color: #46253969;
 }
 
 .description {
-	align-items: center;
+	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 .desc {
 	display: inline-block;
-	max-width: 45%;
+	width: 48%;
+	max-width: 48%;
+	margin-left: 2%;
 	overflow-y: auto;
-	float: right;
+}
+
+.md {
+	max-width: 75%;
 }

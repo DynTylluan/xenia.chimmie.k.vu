@@ -26,7 +26,7 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:zoom="0.295"
-     inkscape:cx="400"
+     inkscape:cx="396.61017"
      inkscape:cy="398.30508"
      inkscape:window-width="1366"
      inkscape:window-height="634"
@@ -40,7 +40,7 @@
      stroke-width="2"
      stroke-linecap="round"
      id="path1"
-     style="stroke:#ffffff;stroke-opacity:1" />
+     style="stroke:#ffffff;stroke-opacity:1;stroke-width:0.99999;stroke-dasharray:none" />
   <path
      d="M20 8H15V3"
      stroke="#200E32"
@@ -48,7 +48,7 @@
      stroke-linecap="round"
      stroke-linejoin="round"
      id="path2"
-     style="stroke:#ffffff;stroke-opacity:1" />
+     style="stroke:#ffffff;stroke-opacity:1;stroke-width:0.99999;stroke-dasharray:none" />
   <path
      d="M7 13H9.5L7 17H9.5"
      stroke="#200E32"
@@ -56,7 +56,7 @@
      stroke-linecap="round"
      stroke-linejoin="round"
      id="path3"
-     style="stroke:#ffffff;stroke-opacity:1" />
+     style="stroke:#ffffff;stroke-opacity:1;stroke-width:0.99999;stroke-dasharray:none" />
   <path
      d="M12 13V17"
      stroke="#200E32"
@@ -64,7 +64,7 @@
      stroke-linecap="round"
      stroke-linejoin="round"
      id="path4"
-     style="stroke:#ffffff;stroke-opacity:1" />
+     style="stroke:#ffffff;stroke-opacity:1;stroke-width:0.99999;stroke-dasharray:none" />
   <path
      d="M15 17L15 15.5M15 15.5L15 13L15.75 13C16.4404 13 17 13.5596 17 14.25V14.25C17 14.9404 16.4404 15.5 15.75 15.5H15Z"
      stroke="#200E32"
@@ -72,5 +72,5 @@
      stroke-linecap="round"
      stroke-linejoin="round"
      id="path5"
-     style="stroke:#ffffff;stroke-opacity:1" />
+     style="stroke:#ffffff;stroke-opacity:1;stroke-width:0.99999;stroke-dasharray:none" />
 </svg>

@@ -4,6 +4,8 @@ SCRIPT_PATH="$(dirname "$(realpath "$0")")"
 
 cd "$SCRIPT_PATH"
 
+rm -f art/bin/*.minimal.png
+
 echo 'Executing setup...'
 sh index.sh
 sh res/scripts/set.sh res/parser.conf index.html
