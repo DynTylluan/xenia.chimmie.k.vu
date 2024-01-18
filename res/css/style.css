@@ -131,7 +131,7 @@ code, code * {
 
 .desc {
 	display: inline-block;
-	max-width: 50%;
+	max-width: 40%;
 	overflow-y: auto;
 	float: right;
 }
