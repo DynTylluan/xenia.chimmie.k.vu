@@ -1,4 +1,5 @@
 .source {
+	display: inline-block;
 	background-color: #00000099;
 	position: fixed;
 	float: top;
