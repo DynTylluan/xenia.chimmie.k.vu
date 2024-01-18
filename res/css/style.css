@@ -116,7 +116,7 @@ code, code * {
 .descimg {
         display: inline-block;
 	vertical-align: center;
-	width: 45%;
+	width: 50%;
 }
 
 .descimg img {
@@ -131,7 +131,7 @@ code, code * {
 
 .desc {
 	display: inline-block;
-	max-width: 40%;
+	max-width: 50%;
 	overflow-y: auto;
 	float: right;
 }
