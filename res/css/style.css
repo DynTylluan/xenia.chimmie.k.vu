@@ -123,6 +123,7 @@ code, code * {
 .descimg img {
 	padding: 0px;
 	height: 100%;
+	width: auto;
 	max-width: 40%;
 	border-radius: 10px;
 	border: 1px solid #ffffff69;
