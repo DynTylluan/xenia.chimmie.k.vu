@@ -47,6 +47,8 @@ if [ -f "$SRC_PATH/../links/${TARGET}.conf" ]; then
 	done
 fi
 
+echo '<a href="#%FILENAME%"><img src="res/img/link.svg" alt=":symlink:" width="35" height="35"/></a>' >> "$OUT_PATH/${TARGET}.png.c.html"
+
 echo '</div></div><hr/>' >> "$OUT_PATH/${TARGET}.png.c.html"
 
 echo 'Configuring "'"${TARGET}.png.c.html"'"...'
